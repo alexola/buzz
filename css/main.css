@@ -1,0 +1,244 @@
+body{
+font-family: 'Google Sans', Robot;
+
+}
+.flex-container {
+    display: flex;
+    justify-content: center;
+    background-color:white;
+    align-items: center;
+    align-content: center;
+    height: 900px;
+
+
+}
+
+.flex-container>.center {
+    background-image: url('../assets/Group6.png');
+    width: 870px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    display: flex;
+    height: 105%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.flex-container>.left {
+    width: 378px;
+    height: 215px;
+    position:fixed;
+    background-repeat: no-repeat;
+    background-position: left;
+    left: -8%;
+    background-image: url('../assets/Group16.svg');
+    bottom:46%;
+
+}
+
+.flex-container>.right {
+    width: 378px;
+    position: fixed;
+    height: 215px;
+    align-items: center;
+    justify-content: flex-start;
+    background-image: url('../assets/Group15.svg');
+    background-repeat: no-repeat;
+    background-position: left;
+    right: -11%;
+    bottom:38%;
+}
+
+.inside-left {
+    color: #242424;
+    width: 350px;
+    display: flex;
+    text-align: center;
+    height: 80%;
+    justify-content: center;
+    align-content: stretch;
+    flex-flow: column;
+    margin-top: 10%;
+    
+}
+
+.inside-left>h2 {
+    padding: 0 15px;
+    text-align: left;
+    display: flex;
+    margin-left: 88px;
+    margin-top: 29%;
+    line-height: 56px;
+    width: 312px;
+    letter-spacing: 1px;
+    font-size: 48px;
+}
+
+.inside-left > p {
+	font-size: 18px;
+    line-height:1.2rem;
+    text-align: left;
+}
+
+
+.inside-right {
+    background-color:transparent;
+    color: white;
+    width: auto;
+    font-size: 19px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 5px;
+    flex-direction: column;
+    margin-top: 24%;
+    margin-left: 140px;
+
+}
+
+.inside-right>p {
+    text-align: center;
+    line-height: 1rem;
+    text-align: left;
+    font-size: 15px;
+    color: #919191;
+    width: 317px;
+    line-height: 26px;
+}
+
+.inside-right> a > button {
+    background-color: #242424;
+    color: white;
+    text-transform: uppercase;
+    width: auto;
+    font-size: 12px;
+    height: 34px;
+    border-style: none;
+    text-align: center;
+    padding: 10px 25px;
+    margin:0;
+    letter-spacing:2.4px;
+
+}
+a {
+    text-decoration: none;
+    
+}
+a:visited {
+    text-decoration: none;
+  }
+
+footer {
+    background-image: url('../assets/buzz.svg');
+    width: 92px;
+    height: 40px;
+    background-repeat: no-repeat;
+    text-align: l;
+    float: right;
+}
+
+
+
+  /*Second page*/
+.second-left {
+    bottom:34% !important;
+}
+.second-right {
+    right: -18% !important;
+    bottom: 56% !important;
+}
+.center-second {
+ background-image:none !important; 
+}
+.inside-left > p {
+    margin-left:100px;
+    color:#919191;
+    text-align:left;
+}
+
+.inside-left-second {
+    margin-top:16%;
+}
+
+.secondPage-image {
+    background-image: url('../assets/lady.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    width:325px;
+    background-position-y: bottom;
+    height: 551px;
+}
+
+
+
+
+
+  @media screen and (max-width: 600px) {
+    .left {
+        left: -49% !important;
+        bottom: 28% !important;
+    }
+    .inside-left{
+
+    }
+
+    .right {
+        right: -54%!important;
+        top: 9% !important;
+        bottom: 0;
+    }
+    .inside-right {
+        right: 38px;
+        position:relative;
+        bottom:200px;
+        margin-top:0;
+    }
+    .flex-container>.center {
+        background-size: auto;
+        background-position: 98% 50%;
+        display: inline-flex;
+        flex-direction: column;
+    }
+    .center > h2 {
+        margin-top: 82%;
+        font-size:38px;
+        margin-left:50%;
+    }
+    /*Second page*/
+    .center-second {
+        
+    }
+    .inside-left-second {
+        margin:0;
+        width: auto;
+        height: 24%;
+
+    }
+    .inside-left-second > h2 {
+        padding:0;
+        margin:0;
+        font-size:27px;
+    }
+    .inside-left-second > p {
+        margin-left:0;
+        font-size: 16px;
+    }
+    .inside-right-second {
+        bottom: 114px;
+        margin: 0;
+        position: unset;
+    }
+
+    .second-left , .second-right {
+        display:none;
+    }
+    .second-footer {
+        position: relative;
+        bottom: 124px;
+        right: 140px;
+    }
+  }
